@@ -210,6 +210,75 @@ body {
 }
 /* About section ends here  */
 
+/* services section starts here */
+.services {
+	color: aliceblue;
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 4rem;
+}
+.container {
+	padding: 90px;
+}
+.sub-title {
+	text-align: center;
+	font-size: 60px;
+	padding-bottom: 70px;
+}
+.sub-title span {
+	color: #0ef;
+}
+.services-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
+	grid-gap: 30px;
+}
+.services-list div {
+	background-color: transparent;
+	padding: 40px;
+	font-size: 13px;
+	border-right: 10px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+	transition: background 0.5s, transform 0.5s;
+}
+.services-list div i {
+	font-size: 50px;
+	margin-bottom: 30px;
+	color: #00eeff;
+}
+.services-list div h2 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.read {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 12px 28px;
+	background: #0ef;
+	color: #12365e;
+	border-radius: 40px;
+	font-size: 16px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 600;
+
+	opacity: 0;
+	animation: slideTop 1s ease forwards;
+	animation-delay: 2s;
+	box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+.read:hover {
+	box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+.services-list div:hover {
+	transform: translateY(-10px);
+	box-shadow: inset 0 0 20px #012290f7, inset 0 0 40px #0053b8f7;
+}
+/* services section starts here */
+
+/* Keyframes for animation  */
 @keyframes slideRight {
 	0% {
 		transform: translateX(-100px);
